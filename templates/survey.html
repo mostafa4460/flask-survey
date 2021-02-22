@@ -6,8 +6,10 @@
 
 <!-- Survey Info Content -->
 
-<h1>{{title}}</h1>
-<p>{{instructions}}</p>
-<a href="/questions/0"><button>Start</button></a>
+<form action="/start" method="POST">
+    <h1>{{title}}</h1>
+    <p>{{instructions}}</p>
+    <button>Start</button>
+</form>
 
 {% endblock %}
